@@ -470,7 +470,7 @@ function Program_SwcList_callback(handles)
         
         winH=progressionbar(['-> '+string_tun_revtun string_prog_swc string_prog_tar string_dc_setup]);
         tic(); realtimeinit(1); realtime(0); realtime(2);
-       //exec('/home/ubuntu/rasp30/prog_assembly/libs/scilab_code/tunnel_revtun_ver00_gui.sce', -1);
+        exec('/home/ubuntu/rasp30/prog_assembly/libs/scilab_code/tunnel_revtun_ver00_gui.sce', -1);
         time1=toc(); string_tun_revtun='Tunnel & Rev. tunnel ('+string(time1)+'/'+string(tun_revtun_time)+'s)';
         disp('tunnel, reverse tunnel done');
         progressionbar(winH,[string_tun_revtun '-> '+string_prog_swc string_prog_tar string_dc_setup]);
