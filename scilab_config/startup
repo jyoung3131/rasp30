@@ -18,7 +18,5 @@ mkdir -p ${FPAAHOME}/RASP_Workspace
 #   sudo cp $FPAAHOME/rasp30/scilab_config/rasp.desktop /usr/share/applications/rasp.desktop 
 #fi
 
-
-$FPAAHOME/scilab-5.4.1/bin/scilab -f $FPAAHOME/rasp30/sci2blif/rasp_design.sce
-
-
+echo "$FPAAHOME/$SCILAB_VERSION/bin/scilab -f $FPAAHOME/rasp30/sci2blif/rasp_design.sce"
+$FPAAHOME/$SCILAB_VERSION/bin/scilab -f $FPAAHOME/rasp30/sci2blif/rasp_design.sce
